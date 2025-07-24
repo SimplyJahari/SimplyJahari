@@ -23,6 +23,17 @@ header {
   color: white; /* Ensure text remains visible against the gradient */
   text-align: center;
   text-shadow: 1px 1px 2px black; /* Add a subtle shadow for readability */
+} .logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: black; /* Match your theme */
+}
+
+.logo-section img {
+  max-width: 200px;
+  height: auto;
 }
 
 /* ... rest of your CSS ... */
