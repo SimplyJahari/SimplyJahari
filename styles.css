@@ -1,1 +1,50 @@
+/* Reset and base layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #001f3f; /* Deep space blue */
+  color: white;
+  text-align: center;
+}
 
+/* Star field background */
+body {
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, gold, transparent),
+    radial-gradient(1.5px 1.5px at 50px 80px, silver, transparent),
+    radial-gradient(1px 1px at 80px 10px, purple, transparent),
+    radial-gradient(2.5px 2.5px at 120px 60px, gold, transparent),
+    radial-gradient(1.8px 1.8px at 150px 110px, silver, transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* Logo section */
+.logo-section {
+  padding: 40px 0;
+}
+
+.logo-section img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to right, purple, gold, silver);
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Links */
+a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: silver;
+  text-decoration: underline;
+}
