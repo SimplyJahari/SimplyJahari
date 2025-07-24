@@ -1,60 +1,40 @@
 /* General page styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
-  color: #333;
+  background-color: #000; /* Dark background for the star field */
+  color: black; /* Black text for content */
   margin: 0;
   padding: 20px;
+  background-image:
+    /* Star layers (adjust values for size, density, and color) */
+    radial-gradient(2px 2px at 20px 30px, gold, rgba(0,0,0,0)), /* Gold star */
+    radial-gradient(1.5px 1.5px at 50px 80px, silver, rgba(0,0,0,0)), /* Silver star */
+    radial-gradient(1px 1px at 80px 10px, purple, rgba(0,0,0,0)), /* Purple star */
+    radial-gradient(2.5px 2.5px at 120px 60px, gold, rgba(0,0,0,0)), /* Another gold star */
+    radial-gradient(1.8px 1.8px at 150px 110px, silver, rgba(0,0,0,0)); /* Another silver star */
+  background-repeat: repeat; /* Repeat the star pattern */
+  background-size: 200px 200px; /* Size of the repeating pattern, adjust for star density */
 }
 
 /* Header styling */
 header {
   background: linear-gradient(to right, purple, gold, silver);
   padding: 10px;
-  color: white;
+  color: white; /* Ensure text remains visible against the gradient */
   text-align: center;
+  text-shadow: 1px 1px 2px black; /* Add a subtle shadow for readability */
 }
 
-/* Logo container */
-.logo-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px 0;
-  position: relative;
-  top: 0;
-}
-
-/* Logo image */
-.site-logo {
-  width: 98px;
-  height: 98px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Main content spacing */
-main {
-  margin-top: 20px;
-}
-
-/* Footer styling */
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  text-align: center;
-}
+/* ... rest of your CSS ... */
 
 /* Link styles */
 a {
-  color: #6a1b9a; /* deep purple */
+  color: gold; /* Change link color for better visibility against the dark background */
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #ab47bc; /* lighter lavender */
+  color: silver; /* Adjust hover color as desired */
 }
