@@ -2,7 +2,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #000; /* Dark background for the star field */
-  color: black; /* Black text for content */
+  color: white; /* Or lightgray for a softer contrast */
   margin: 0;
   padding: 20px;
   background-image:
